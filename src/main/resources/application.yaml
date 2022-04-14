@@ -1,0 +1,2 @@
+#targetUrl: http://localhost:8080/api/user/1
+targetUrl: http://localhost:8080/api/user
