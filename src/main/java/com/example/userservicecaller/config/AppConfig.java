@@ -1,4 +1,4 @@
-package com.example.userservicecaller;
+package com.example.userservicecaller.config;
 
 import com.example.userservicecaller.service.UserClient;
 import com.example.userservicecaller.service.UsersClient;
@@ -15,11 +15,11 @@ import org.springframework.web.client.RestTemplate;
 
 
 @Configuration
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 @PropertySource("classpath:application.yaml")
 public class AppConfig {
 
-    @Value("${targetUrl:http://localhost:8080/api/user/2}")
+    @Value("${targetUrl}")
     private String url;
 
 @Bean
