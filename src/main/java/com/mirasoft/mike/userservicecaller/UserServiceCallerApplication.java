@@ -1,8 +1,8 @@
-package com.example.userservicecaller;
+package com.mirasoft.mike.userservicecaller;
 
-import com.example.userservicecaller.config.AppConfig;
-import com.example.userservicecaller.dto.UserDto;
-import com.example.userservicecaller.service.UsersClient;
+import com.mirasoft.mike.userservicecaller.config.AppConfig;
+import com.mirasoft.mike.userservicecaller.dto.UserDto;
+import com.mirasoft.mike.userservicecaller.service.UsersClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -26,7 +26,6 @@ public class UserServiceCallerApplication {
 //        String url1 = userClient.getUrl();
 //        UserDto userDto = userClient.getUserFromUserService(url1);
 //        System.out.println(userDto);
-
 
         UsersClient usersClient = context.getBean("UsersBean", UsersClient.class);
         String url = usersClient.getUrl();

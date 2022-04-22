@@ -1,4 +1,4 @@
-package com.example.userservicecaller.dto;
+package com.mirasoft.mike.userservicecaller.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

@@ -1,2 +1,9 @@
 # user-service-caller
-Microservice that calling user-service 
+
+Микросервис, обращающийся к другому микросервису c названием "user-service" и получающий посредством 
+RestTemplate запроса данные пользователей из БД, сохранённые в ней "user-service"'ом.
+Затем выводящий данные пользователей в консоль. К сожалению, из - за ненастроеной аутентификации,
+для теста, в "user-service" необходимо отключить аутентификацию endpoint'а принимающего запрос:
+в классе SecurityConfig раскомментировать строку ".antMatchers("/api/**").permitAll()" в методе configure()
+и закомментировать аннотацию @PreAuthorize в классе UserController в методе "getAll" или "getById" 
+в завасимости от запроса.

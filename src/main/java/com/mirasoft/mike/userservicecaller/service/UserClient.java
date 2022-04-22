@@ -1,6 +1,6 @@
-package com.example.userservicecaller.service;
+package com.mirasoft.mike.userservicecaller.service;
 
-import com.example.userservicecaller.dto.UserDto;
+import com.mirasoft.mike.userservicecaller.dto.UserDto;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,7 @@
 server:
   port: 8082
-#targetUrl: http://localhost:8080/api/user/1
-targetUrl: http://localhost:8080/api/user
+targetUrl: http://localhost:8080/api/getAll
+#targetUrl: http://localhost:8080/api/getOne/1
+spring:
+  application:
+    name: userServiceCaller

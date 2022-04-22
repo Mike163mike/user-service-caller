@@ -1,11 +1,10 @@
-package com.example.userservicecaller.config;
+package com.mirasoft.mike.userservicecaller.config;
 
-import com.example.userservicecaller.service.UserClient;
-import com.example.userservicecaller.service.UsersClient;
+import com.mirasoft.mike.userservicecaller.service.UserClient;
+import com.mirasoft.mike.userservicecaller.service.UsersClient;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -15,7 +14,6 @@ import org.springframework.web.client.RestTemplate;
 
 
 @Configuration
-//@EnableAutoConfiguration
 @PropertySource("classpath:application.yaml")
 public class AppConfig {
 

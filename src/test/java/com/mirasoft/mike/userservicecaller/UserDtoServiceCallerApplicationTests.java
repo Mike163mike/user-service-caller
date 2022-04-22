@@ -1,4 +1,4 @@
-package com.example.userservicecaller;
+package com.mirasoft.mike.userservicecaller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
